@@ -1,0 +1,326 @@
+body {
+    background-color: #0000001A;
+}
+.bodyContainer {
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0mm;
+    background-color: #FFFFFF;
+    border: 1px solid #0000001A;
+}
+
+
+/* Style the header section which include header logo and header navigation Bar*/
+.headerLogo{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #0080FF;
+    width: 100%;
+    text-align: center;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    padding: 0;
+}
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+    text-decoration: none;
+}
+.navbar ul li a:hover:not(.active) {
+    border-bottom: 4px solid white;
+
+}
+a.active {
+    border-bottom: 4px solid white;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin:0;
+    z-index: 1;
+  }
+.slideDot {
+    position: absolute;
+    top: 88%;
+    width: 100%;
+    text-align: center;
+    margin:0;
+    z-index: 2;
+} 
+/* The dots/bullets/indicators */
+.dot {
+    height: 7px;
+    width: 20px;
+    margin: 0px 3px;
+    border-radius: 2px;
+    background-color:#ffffff ;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.dot:hover {
+    background-color: #0080FF;
+}
+.dotActive{
+    background-color: #0080FF;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+  
+  
+
+/* Style the Toggle Tab */
+.toggleableTab{
+    margin: 0mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-right: 10mm;
+    padding-left: 10mm;
+    display: block;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 17px;
+    text-align: center;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #0080FF;
+    color: white;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #0080FF;
+    color: white;
+    }
+/* Style the tab content */
+.tabcontent {
+    width: 100%;
+    margin: 0%;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0px 10px 40px 2px rgba(214, 214, 214, 1);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.outerFlexContainer{
+    margin: 0mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-right: 10mm;
+    padding-left: 10mm;
+    display: block;
+}
+.innerFlexContainer {
+    width: 100%;
+    border: none;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+}
+.columnContainer{
+    margin: 0%;
+}
+
+
+/* Styling footer section*/
+footer{
+    background-color:#FBFBFB;
+}
+
+.bottomLogo {
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerNavbar {
+
+}
+.footerNavbar{
+    display: flex;
+}
+.footerNavbar ul{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.footerNavbar ul li {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    padding: 0;
+}
+.footerNavbar ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 40px;
+    margin: 5px 0px;
+    text-decoration: none;
+}
+.footerNavbar ul li a:hover:not(.active) {
+    border-bottom: 3px solid #0080FF;
+}
+.iconFooterNavbar {
+}
+.iconFooterNavbar{
+    display: flex;
+}
+.iconFooterNavbar ul{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.iconFooterNavbar ul li {
+    display: inline-block;
+    padding: 0;
+}
+.iconFooterNavbar ul li a {
+    display: block;
+    text-align: center;
+    padding: 0px 40px;
+    margin: 0;
+    text-decoration: none;
+}
+.iconFooterNavbar ul li a:hover:not(.active) {
+}
+.copyright{
+    margin-top: 10px;
+    font-size: 3mm;
+    text-align: center;
+    border: 1px solid #0000001A ;
+    padding: 15px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type=text], input[type=email], input[type=number], select, textarea {
+    width: 100%;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #0080FF;
+    color: white;
+    width: 100%;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .bodyContainer {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .bodyContainer {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .bodyContainer {
+        width: 1170px;
+    }
+}

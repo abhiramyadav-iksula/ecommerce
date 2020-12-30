@@ -1,0 +1,170 @@
+body {
+    background-color: #0000001A;
+}
+.bodyContainer {
+    margin:0% 10% 0% 10%;
+    background-color: #FFFFFF;
+    border: 1px solid #0000001A;
+}
+
+
+/* Style the header section which include header logo and header navigation Bar*/
+.headerLogo{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #0080FF;
+    width: 100%;
+    text-align: center;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    padding: 0;
+}
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+    text-decoration: none;
+}
+.navbar ul li a:hover:not(.active) {
+    border-bottom: 4px solid white;
+
+}
+a.active {
+    border-bottom: 4px solid white;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin:0;
+    z-index: 1;
+  }
+.slideDot {
+    position: absolute;
+    top: 88%;
+    width: 100%;
+    text-align: center;
+    margin:0;
+    z-index: 2;
+} 
+/* The dots/bullets/indicators */
+.dot {
+    height: 7px;
+    width: 20px;
+    margin: 0px 3px;
+    border-radius: 2px;
+    background-color:#ffffff ;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.dot:hover {
+    background-color: #0080FF;
+}
+.dotActive{
+    background-color: #0080FF;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+  
+  
+
+/* Style the Toggle Tab */
+.toggleableTab{
+    margin: 0mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-right: 10mm;
+    padding-left: 10mm;
+    display: block;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 17px;
+    text-align: center;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #0080FF;
+    color: white;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #0080FF;
+    color: white;
+    }
+/* Style the tab content */
+.tabcontent {
+    width: 100%;
+    margin: 0%;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0px 10px 40px 2px rgba(214, 214, 214, 1);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.outerFlexContainer{
+    margin: 0mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-right: 10mm;
+    padding-left: 10mm;
+    display: block;
+}
+.innerFlexContainer {
+    border: none;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+}
+
+
+
+
+
